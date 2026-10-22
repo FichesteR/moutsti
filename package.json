@@ -1,0 +1,9 @@
+{
+    "name": "moutsti",
+    "version": "1.0.0",
+    "description": "Automação E2E e API com Cypress — desafio QA Sênior",
+    "scripts": {
+        "cy:open": "cypress open",
+        "cy:run": "cypress run"
+    }
+}
