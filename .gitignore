@@ -1,1 +1,4 @@
-# Moutsti — Automação Cypress (ServeRest)
+node_modules/
+cypress/screenshots/
+cypress/videos/
+cypress-report/
