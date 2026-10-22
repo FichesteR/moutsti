@@ -1,3 +1,7 @@
+// Seletores planos agrupados por tela.
+// Objetos simples em vez de classes Page Object — reduz indireção
+// e mantém os specs legíveis.
+
 export const loginSelectors = {
     email: 'input[name="email"]',
     password: 'input[name="password"]',

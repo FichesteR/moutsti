@@ -1,6 +1,7 @@
 name: Moutsti — Cypress E2E
 
 on:
+  # Roda em todo push e PR para a branch principal
   push:
     branches: [main]
   pull_request:
@@ -8,13 +9,16 @@ on:
 
 jobs:
   cypress-run:
+      # Versão estável do Ubuntu no GitHub Actions
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v6
 
       - name: Cypress run
+        # Action oficial do Cypress: instala deps, cacheia e roda os testes
         uses: cypress-io/github-action@v7
         with:
+          # npm ci respeita o package-lock (builds reproduzíveis)
           install-command: npm ci
           command: npm run cy:run
